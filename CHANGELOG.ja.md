@@ -5,6 +5,18 @@
 このドキュメントは [Keep a Changelog](https://keepachangelog.com/ja/1.1.0/) の形式に基づいており、
 [セマンティック バージョニング](https://semver.org/lang/ja/spec/v2.0.0.html) に準拠しています。
 
+## [4.0.1] - 2026-02-04
+
+### 追加
+
+- package.jsonとgitタグのバージョン不一致を防ぐためのリリースプロセスの自動検証 (#305)
+- 明確なエラーメッセージと修正手順を含む新しい検証スクリプト (`scripts/verify-release-versions.sh`)
+
+### 変更
+
+- フェイルファスト検証ステップを含むリリースワークフローの更新
+- claude-code-plugin READMEドキュメントの簡素化
+
 ## [4.0.0] - 2026-02-03
 
 ### ⚠️ 破壊的変更

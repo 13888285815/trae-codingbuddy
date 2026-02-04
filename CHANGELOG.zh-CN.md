@@ -5,6 +5,18 @@
 本文档格式基于 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.1.0/)，
 并遵循 [语义化版本](https://semver.org/lang/zh-CN/spec/v2.0.0.html)。
 
+## [4.0.1] - 2026-02-04
+
+### 新增
+
+- 自动化版本一致性验证以防止 package.json 和 git 标签版本不匹配 (#305)
+- 新增验证脚本 (`scripts/verify-release-versions.sh`)，包含清晰的错误消息和修复说明
+
+### 变更
+
+- 更新发布工作流程，添加快速失败验证步骤
+- 简化 claude-code-plugin README 文档
+
 ## [4.0.0] - 2026-02-03
 
 ### ⚠️ 破坏性变更

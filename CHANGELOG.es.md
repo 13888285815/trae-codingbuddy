@@ -5,6 +5,18 @@ Todos los cambios notables de este proyecto se documentarán en este archivo.
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/),
 y este proyecto se adhiere a [Versionado Semántico](https://semver.org/lang/es/spec/v2.0.0.html).
 
+## [4.0.1] - 2026-02-04
+
+### Agregado
+
+- Verificación automática de consistencia de versiones para prevenir desajustes entre package.json y etiquetas git (#305)
+- Nuevo script de verificación (`scripts/verify-release-versions.sh`) con mensajes de error claros e instrucciones de corrección
+
+### Cambiado
+
+- Flujo de trabajo de lanzamiento actualizado con paso de verificación fail-fast
+- Documentación README de claude-code-plugin simplificada
+
 ## [4.0.0] - 2026-02-03
 
 ### ⚠️ Cambios Incompatibles (Breaking Changes)

@@ -5,6 +5,18 @@
 이 문서는 [Keep a Changelog](https://keepachangelog.com/ko/1.1.0/) 형식을 따르며,
 [Semantic Versioning](https://semver.org/lang/ko/spec/v2.0.0.html)을 준수합니다.
 
+## [4.0.1] - 2026-02-04
+
+### 추가됨
+
+- package.json과 git 태그 버전 불일치를 방지하기 위한 릴리스 프로세스 자동 검증 (#305)
+- 명확한 오류 메시지와 수정 지침을 포함한 새로운 검증 스크립트 (`scripts/verify-release-versions.sh`)
+
+### 변경됨
+
+- 빠른 실패(fail-fast) 검증 단계가 포함된 릴리스 워크플로우 업데이트
+- claude-code-plugin README 문서 간소화
+
 ## [4.0.0] - 2026-02-03
 
 ### ⚠️ 호환성 변경 사항 (Breaking Changes)
