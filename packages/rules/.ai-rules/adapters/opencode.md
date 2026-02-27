@@ -130,7 +130,10 @@ Update your configuration file (`.opencode.json` or `crush.json`):
   "mcp": {
     "codingbuddy": {
       "type": "local",
-      "command": ["npx", "codingbuddy@latest", "mcp"]
+      "command": ["npx", "codingbuddy@latest", "mcp"],
+      "env": {
+        "CODINGBUDDY_PROJECT_ROOT": "/absolute/path/to/your/project"
+      }
     }
   }
 }
@@ -173,11 +176,17 @@ Add to your MCP configuration:
     "codingbuddy": {
       "type": "local",
       "command": ["npx", "codingbuddy@latest", "mcp"],
-      "env": ["NODE_ENV=production"]
+      "env": {
+        "CODINGBUDDY_PROJECT_ROOT": "/absolute/path/to/your/project"
+      }
     }
   }
 }
 ```
+
+> **Important:** OpenCode/Crush의 `roots/list` MCP capability 지원 여부는 미확인입니다.
+> `CODINGBUDDY_PROJECT_ROOT` 없이는 서버가 프로젝트의 `codingbuddy.config.json`을 찾지 못하여
+> `language` 등 설정이 기본값으로 동작합니다. 항상 이 환경변수를 프로젝트의 절대 경로로 설정하세요.
 
 #### Available MCP Tools
 
@@ -447,6 +456,16 @@ npx codingbuddy@latest mcp
 **3. Agent Not Responding in Korean**
 - Verify `[OpenCode Override]` includes Korean language setting
 - Check agent prompt includes language instruction
+
+**4. Project Config Not Detected**
+```bash
+# CODINGBUDDY_PROJECT_ROOT가 MCP env에 설정되어 있는지 확인
+# 이 환경변수 없이는 codingbuddy.config.json을 찾지 못합니다
+# .opencode.json 또는 crush.json의 mcp 섹션에 추가:
+"env": {
+  "CODINGBUDDY_PROJECT_ROOT": "/absolute/path/to/your/project"
+}
+```
 
 ### Migration from OpenCode to Crush
 
