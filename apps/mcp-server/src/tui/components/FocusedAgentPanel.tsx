@@ -23,6 +23,8 @@ export interface FocusedAgentPanelProps {
   now?: number;
   width?: number;
   height?: number;
+  tick?: number;
+  now?: number;
 }
 
 function SectionDivider({ title }: { title: string }): React.ReactElement {
