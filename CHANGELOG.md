@@ -5,6 +5,25 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [5.4.1] - 2026-04-08
+
+### Added
+
+#### Plugin Standalone Surface Enhancement
+- Permission forecast: prompt-aware pattern analysis (SHIP/TEST/INSTALL/DELETE/REVIEW) mirroring MCP server — replaces static mode-only defaults
+- Council scene: real agent eye glyphs from `.ai-rules/agents/*.json` replacing placeholder `●‿●` faces with per-agent visual identity
+- Permission forecast unit tests (11 new tests)
+
+### Changed
+- PLAN template: Discover→Design→Plan staged flow replaces legacy "Output full plan" directive
+- Clarification budget: persisted in HUD state across rounds (previously reset to 3 every round)
+
+### Fixed
+- Agent JSON loading: DRY refactor via shared `_read_agent_json()` with per-instance cache
+- `init_hud_state` schema: synchronized `questionBudget` field with `_EXTENDED_DEFAULTS`
+- Agent slug path-traversal safety: `os.path.basename()` applied before file resolution
+- Double `evaluate_clarification_standalone` call eliminated in standalone mode
+
 ## [5.4.0] - 2026-04-07
 
 ### Added
