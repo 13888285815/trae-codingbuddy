@@ -52,7 +52,7 @@
     },
     "filesystem": {
       "type": "local",
-      "command": ["npx", "-y", "@modelcontextprotocol/server-filesystem", "/Users/jeremy/workspace"]
+      "command": ["npx", "-y", "@modelcontextprotocol/server-filesystem", "${WORKSPACE_PATH}"]
     }
   },
 
