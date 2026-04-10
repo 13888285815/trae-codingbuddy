@@ -24,15 +24,15 @@ export const SlotError = ({ reset, slotName }: SlotErrorProps) => {
 
   return (
     <section role="alert" aria-live="assertive">
-      <h2>Failed to load {slotName}</h2>
-      <p>Something went wrong. Please try again.</p>
+      <h2>{slotName} 加载失败</h2>
+      <p>出现了一些问题，请重试。</p>
       <button
         ref={buttonRef}
         onClick={reset}
         type="button"
-        aria-label={`Try loading ${slotName} again`}
+        aria-label={`重新加载 ${slotName}`}
       >
-        Try again
+        重试
       </button>
     </section>
   );

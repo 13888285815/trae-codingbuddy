@@ -1,8 +1,8 @@
 import { Skeleton } from '@/components/ui/skeleton';
 
 const FeaturesLoading = () => (
-  <section aria-busy="true" aria-label="Loading features">
-    <span className="sr-only">Loading features, please wait...</span>
+  <section aria-busy="true" aria-label="正在加载功能介绍">
+    <span className="sr-only">正在加载功能介绍，请稍候...</span>
     <div className="px-4 py-16 sm:py-24">
       <div className="mx-auto max-w-5xl">
         <Skeleton className="mx-auto h-8 w-48 mb-12" />

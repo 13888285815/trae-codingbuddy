@@ -64,7 +64,7 @@ export const CTAFooter = async ({ locale }: WidgetProps) => {
       {/* Footer */}
       <footer
         data-testid="footer"
-        aria-label="Site footer"
+        aria-label="网站页脚"
         className="border-t border-border px-4 py-6"
       >
         <div className="mx-auto flex max-w-4xl flex-col items-center justify-between gap-2 text-center sm:flex-row">

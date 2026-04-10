@@ -1,8 +1,8 @@
 import { Skeleton } from '@/components/ui/skeleton';
 
 const CTAFooterLoading = () => (
-  <section aria-busy="true" aria-label="Loading footer">
-    <span className="sr-only">Loading footer, please wait...</span>
+  <section aria-busy="true" aria-label="正在加载页脚">
+    <span className="sr-only">正在加载页脚，请稍候...</span>
     <div className="px-4 py-16 sm:py-24 text-center">
       <Skeleton className="mx-auto h-8 w-64 mb-8" />
       <Skeleton className="mx-auto h-12 w-80 rounded-lg mb-8" />

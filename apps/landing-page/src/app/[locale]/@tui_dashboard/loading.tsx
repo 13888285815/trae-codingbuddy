@@ -1,8 +1,8 @@
 import { Skeleton } from '@/components/ui/skeleton';
 
 const TuiDashboardLoading = () => (
-  <section aria-busy="true" aria-label="Loading TUI dashboard">
-    <span className="sr-only">Loading TUI dashboard, please wait...</span>
+  <section aria-busy="true" aria-label="正在加载 TUI 仪表板">
+    <span className="sr-only">正在加载 TUI 仪表板，请稍候...</span>
     <div className="px-4 py-16 sm:py-24">
       <div className="mx-auto max-w-5xl">
         <Skeleton className="mx-auto mb-3 h-8 w-64" />

@@ -38,7 +38,7 @@ export const TuiDashboard = async ({ locale }: WidgetProps) => {
             <span className="size-3 rounded-full bg-terminal-yellow" aria-hidden="true" />
             <span className="size-3 rounded-full bg-terminal-green" aria-hidden="true" />
             <span className="ml-2 font-mono text-xs text-terminal-muted">
-              codingbuddy agent dashboard
+              codingbuddy 代理仪表板
             </span>
           </div>
           <div className="relative aspect-[16/9] w-full">

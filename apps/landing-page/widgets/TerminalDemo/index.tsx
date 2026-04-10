@@ -34,7 +34,7 @@ const toolFiles = [
 export const TerminalDemo = ({ messages }: TerminalDemoProps) => (
   <div
     role="region"
-    aria-label="Terminal demo showing codingbuddy installation"
+    aria-label="终端演示：展示 codingbuddy 安装过程"
     className="mx-auto w-full max-w-2xl overflow-hidden rounded-lg border border-terminal-border bg-terminal-bg shadow-lg glow-purple"
   >
     {/* Title bar */}
